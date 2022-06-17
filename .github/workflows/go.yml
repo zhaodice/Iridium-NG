@@ -19,7 +19,7 @@ jobs:
         go-version: 1.18
         
     - name: Depandences
-      run: apt install libpcap-devel
+      run: sudo apt-get install -y libpcap-devel
       
     - name: Build
       run: go build -v ./...
