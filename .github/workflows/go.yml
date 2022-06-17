@@ -17,7 +17,10 @@ jobs:
       uses: actions/setup-go@v3
       with:
         go-version: 1.18
-
+        
+    - name: Depandences
+      run: apt install libpcap-devel
+      
     - name: Build
       run: go build -v ./...
 
